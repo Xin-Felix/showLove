@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="work.huangxin.collect.mapper.MessageMapper">
+  <resultMap id="BaseResultMap" type="work.huangxin.collect.model.Message">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="music_url" jdbcType="VARCHAR" property="musicUrl" />
+    <result column="me_name" jdbcType="VARCHAR" property="meName" />
+    <result column="other_name" jdbcType="VARCHAR" property="otherName" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, content, music_url, me_name, other_name, time, ip
+  </sql>
+</mapper>
